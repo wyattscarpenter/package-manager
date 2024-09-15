@@ -29,7 +29,7 @@ For cross-system compatibility and scripting reasons, `package-manager` must nee
 
 Install could also take versions appended to the package names? See https://semver.org/
 
-Perhaps the ideal name for this tool would not be `package-manager` but `install`; alas, there is already an `install`. It seemingly just moves files around and chmods them... thus saving you one line of shell script, I guess. See https://en.wikipedia.org/wiki/Install_(Unix)
+Perhaps the ideal name for this tool would not be `package-manager` but `install`; alas, there is already an `install`. It seemingly just moves files around and chmods them... thus saving you one line of shell script, I guess. See https://en.wikipedia.org/wiki/Install_(Unix) . Update: `install` isn't specified in POSIX (and "It has mostly split into two camps in terms of compatibility") so I don't know if we need to be precious about name-colliding with it. However, in my more-recent thinking, I have begun to like the name `get` in lieu of `package-manager install`; what could be simpler? And, somehow, there isn't already a widespread program called `get`.
 
 It would be best if this alias were to be adopted by everyone, so it could always be counted upon (within reason), thus solving the problem once and for all. Perhaps it could eventually make its way into POSIX or Bash built-ins or something.
 
